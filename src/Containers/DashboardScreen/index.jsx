@@ -87,7 +87,7 @@ export default function DashboardScreen() {
       <View>
         <NewsCard
           news={item}
-          handleNewsPress={() => handleNewsPress(item)}
+          handleNewsPress={() => onNewsPress(item)}
           loading={loading}
         />
       </View>
@@ -95,7 +95,7 @@ export default function DashboardScreen() {
   };
 
   //Opening web url on Flat List item click
-  const handleNewsPress = item => {
+  const onNewsPress = item => {
     Linking.openURL(item?.url);
   };
 

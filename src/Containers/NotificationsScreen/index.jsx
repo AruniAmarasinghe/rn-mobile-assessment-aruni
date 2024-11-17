@@ -39,7 +39,7 @@ export default function NotificationsScreen() {
   // }
 
   //Handling user journey based on remote notification alert click
-  const onRemoteNotificationPress = async () => {
+  const onContinuePress = async () => {
     if (Platform.OS === 'android') {
       //NOTE: Android version 12 and below will return never_ask_again without any prompt instead of granted,
       // Only version from Android 13 and above will ask for user permission [source:https://stackoverflow.com/a/77704552 ]
@@ -89,7 +89,7 @@ export default function NotificationsScreen() {
           </Text>
         </View>
         <View style={styles.btnContainer}>
-          <ContinueButton onPress={onRemoteNotificationPress} />
+          <ContinueButton onPress={onContinuePress} />
         </View>
       </View>
     </SafeAreaView>
