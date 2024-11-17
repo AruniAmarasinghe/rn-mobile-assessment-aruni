@@ -1,5 +1,5 @@
-import React, {useEffect} from 'react';
-import {SafeAreaView, View} from 'react-native';
+import React, {useEffect, useState, useRef} from 'react';
+import {AppState, SafeAreaView, View} from 'react-native';
 
 import {navigateAndSimpleReset, navigate} from '../../Navigators/Root';
 import {getData} from '../../Stores/store';
@@ -12,9 +12,27 @@ import styles from './styles';
 
 export default function SplashScreen() {
   const {Layout} = useTheme();
+  const appState = useRef(AppState.currentState);
+  const [appStateVisible, setAppStateVisible] = useState(appState.current);
 
+  //Checking app state to handle user navigation
   useEffect(() => {
-    checkAuth();
+    const subscription = AppState.addEventListener('change', nextAppState => {
+      if (
+        appState.current.match(/inactive|background/) &&
+        nextAppState === 'active'
+      ) {
+        checkAuth();
+      }
+
+      appState.current = nextAppState;
+      setAppStateVisible(appState.current);
+      checkAuth();
+    });
+
+    return () => {
+      subscription.remove();
+    };
   }, []);
 
   //Checking if User data is already stored in Async storage and handling user journey
