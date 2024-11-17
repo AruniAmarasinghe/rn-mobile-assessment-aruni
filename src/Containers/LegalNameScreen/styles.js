@@ -10,14 +10,14 @@ export default StyleSheet.create({
   titleTxt: {
     fontSize: 30,
     fontWeight: '700',
-    fontFamily: 'Roboto',
-    color: Colors.titleText,
+    fontFamily: 'RobotoBold',
+    color: Colors.primary,
   },
   subTxt: {
     marginVertical: 20,
     color: Colors.subText,
     fontSize: 16,
-    fontFamily: 'Roboto',
+    fontFamily: 'RobotoLight',
     fontWeight: '400',
     lineHeight: 24,
   },
@@ -31,7 +31,7 @@ export default StyleSheet.create({
   },
   inputTxt: {
     fontSize: 20,
-    fontFamily: 'Roboto',
+    fontFamily: 'RobotoLight',
     fontWeight: '400',
     color: Colors.primary,
   },

@@ -11,7 +11,7 @@ export default StyleSheet.create({
     backgroundColor: Colors.buttonColor,
   },
   btnText: {
-    fontFamily: 'Roboto',
+    fontFamily: 'RobotoMedium',
     fontSize: 16,
     lineHeight: 24,
     fontWeight: '500',

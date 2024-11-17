@@ -13,14 +13,14 @@ export default StyleSheet.create({
   },
   titelTxt: {
     color: Colors.primary,
-    fontFamily: 'Roboto',
+    fontFamily: 'RobotoBold',
     fontWeight: '700',
     fontSize: 24,
     marginVertical: 20,
   },
   subTxt: {
     color: Colors.subText,
-    fontFamily: 'Roboto',
+    fontFamily: 'RobotoLight',
     fontWeight: '400',
     fontSize: 16,
     textAlign: 'center',

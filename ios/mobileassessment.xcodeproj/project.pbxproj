@@ -12,8 +12,12 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		4AF7741987E7471891B217E4 /* RobotoBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6BB73D8C42154045B4558265 /* RobotoBold.ttf */; };
 		7699B88040F8A987B510C191 /* libPods-mobileassessment-mobileassessmentTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-mobileassessment-mobileassessmentTests.a */; };
+		7D20037BA34247F6888997C2 /* RobotoMedium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7C2A54FB3DD84588B5AB5A46 /* RobotoMedium.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		8B60EDBC906E4551BBB00AA0 /* RalewayBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44CDE774CAC542A0B9ED6AAC /* RalewayBold.ttf */; };
+		E25EE5AB4FF642488BFF5008 /* RobotoLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C3228ECBA4945859BB000D8 /* RobotoLight.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,9 +42,13 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = mobileassessment/main.m; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-mobileassessment-mobileassessmentTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mobileassessment-mobileassessmentTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B4392A12AC88292D35C810B /* Pods-mobileassessment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobileassessment.debug.xcconfig"; path = "Target Support Files/Pods-mobileassessment/Pods-mobileassessment.debug.xcconfig"; sourceTree = "<group>"; };
+		44CDE774CAC542A0B9ED6AAC /* RalewayBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = RalewayBold.ttf; path = ../assets/fonts/RalewayBold.ttf; sourceTree = "<group>"; };
+		4C3228ECBA4945859BB000D8 /* RobotoLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = RobotoLight.ttf; path = ../assets/fonts/RobotoLight.ttf; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-mobileassessment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobileassessment.release.xcconfig"; path = "Target Support Files/Pods-mobileassessment/Pods-mobileassessment.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-mobileassessment-mobileassessmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobileassessment-mobileassessmentTests.debug.xcconfig"; path = "Target Support Files/Pods-mobileassessment-mobileassessmentTests/Pods-mobileassessment-mobileassessmentTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-mobileassessment.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mobileassessment.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BB73D8C42154045B4558265 /* RobotoBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = RobotoBold.ttf; path = ../assets/fonts/RobotoBold.ttf; sourceTree = "<group>"; };
+		7C2A54FB3DD84588B5AB5A46 /* RobotoMedium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = RobotoMedium.ttf; path = ../assets/fonts/RobotoMedium.ttf; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = mobileassessment/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-mobileassessment-mobileassessmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobileassessment-mobileassessmentTests.release.xcconfig"; path = "Target Support Files/Pods-mobileassessment-mobileassessmentTests/Pods-mobileassessment-mobileassessmentTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -108,6 +116,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7506D9FA5FA34E13A726703B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				44CDE774CAC542A0B9ED6AAC /* RalewayBold.ttf */,
+				6BB73D8C42154045B4558265 /* RobotoBold.ttf */,
+				4C3228ECBA4945859BB000D8 /* RobotoLight.ttf */,
+				7C2A54FB3DD84588B5AB5A46 /* RobotoMedium.ttf */,
+			);
+			name = Resources;
+			path = "";
+			sourceTree = "<group>";
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +144,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				7506D9FA5FA34E13A726703B /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -245,6 +266,10 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				8B60EDBC906E4551BBB00AA0 /* RalewayBold.ttf in Resources */,
+				4AF7741987E7471891B217E4 /* RobotoBold.ttf in Resources */,
+				E25EE5AB4FF642488BFF5008 /* RobotoLight.ttf in Resources */,
+				7D20037BA34247F6888997C2 /* RobotoMedium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

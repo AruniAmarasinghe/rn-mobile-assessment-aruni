@@ -15,6 +15,6 @@ export default StyleSheet.create({
     color: Colors.white,
     fontSize: 32,
     lineHeight: 35.2,
-    fontFamily: 'Raleway',
+    fontFamily: 'RalewayBold',
   },
 });
