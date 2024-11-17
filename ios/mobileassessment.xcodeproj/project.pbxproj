@@ -18,6 +18,7 @@
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		8B60EDBC906E4551BBB00AA0 /* RalewayBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44CDE774CAC542A0B9ED6AAC /* RalewayBold.ttf */; };
 		E25EE5AB4FF642488BFF5008 /* RobotoLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C3228ECBA4945859BB000D8 /* RobotoLight.ttf */; };
+		62DFB08331814146B7BF787F /* RubikRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3ED4587185614E2BBA309453 /* RubikRegular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		89C6BE57DB24E9ADA2F236DE /* Pods-mobileassessment-mobileassessmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobileassessment-mobileassessmentTests.release.xcconfig"; path = "Target Support Files/Pods-mobileassessment-mobileassessmentTests/Pods-mobileassessment-mobileassessmentTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F66C8F412CE78CD50052307D /* mobileassessment.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = mobileassessment.entitlements; path = mobileassessment/mobileassessment.entitlements; sourceTree = "<group>"; };
+		3ED4587185614E2BBA309453 /* RubikRegular.ttf */ = {isa = PBXFileReference; name = "RubikRegular.ttf"; path = "../assets/fonts/RubikRegular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 				6BB73D8C42154045B4558265 /* RobotoBold.ttf */,
 				4C3228ECBA4945859BB000D8 /* RobotoLight.ttf */,
 				7C2A54FB3DD84588B5AB5A46 /* RobotoMedium.ttf */,
+				3ED4587185614E2BBA309453 /* RubikRegular.ttf */,
 			);
 			name = Resources;
 			path = "";
@@ -270,6 +273,7 @@
 				4AF7741987E7471891B217E4 /* RobotoBold.ttf in Resources */,
 				E25EE5AB4FF642488BFF5008 /* RobotoLight.ttf in Resources */,
 				7D20037BA34247F6888997C2 /* RobotoMedium.ttf in Resources */,
+				62DFB08331814146B7BF787F /* RubikRegular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

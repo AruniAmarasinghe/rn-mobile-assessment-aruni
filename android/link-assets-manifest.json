@@ -16,6 +16,10 @@
     {
       "path": "assets/fonts/RobotoMedium.ttf",
       "sha1": "0ee6b0bd5ff6fe30e4ef720a08e38656dc60985f"
+    },
+    {
+      "path": "assets/fonts/RubikRegular.ttf",
+      "sha1": "9d7091d63f35c9d28518b06566442a02b306980a"
     }
   ]
 }
