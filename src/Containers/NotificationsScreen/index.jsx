@@ -8,6 +8,7 @@ import {
 } from 'react-native';
 import PushNotificationIOS from '@react-native-community/push-notification-ios';
 
+import {backHandler} from '../../Util/Common';
 import {CommonAlert, ContinueButton} from '../../Components';
 import {navigate} from '../../Navigators/Root';
 import {NotificationIcon} from '../../Assets/SvgIcons/index';
@@ -37,6 +38,10 @@ export default function NotificationsScreen() {
   //     // Do something else with push notification
   //     }
   // }
+
+  useEffect(() => {
+    backHandler();
+  }, []);
 
   //Handling user journey based on remote notification alert click
   const onContinuePress = async () => {

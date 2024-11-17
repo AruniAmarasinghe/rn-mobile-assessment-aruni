@@ -11,6 +11,7 @@ import {
 import {getData} from '../../Stores/store';
 import * as NewsService from '../../Services/NewsService';
 
+import {backHandler} from '../../Util/Common';
 import {CommonAlert, Header, Loader, NewsCard} from '../../Components';
 import {useTheme} from '../../Theme/index';
 
@@ -27,18 +28,8 @@ export default function DashboardScreen() {
     retrieveNewsData();
   }, [loading]);
 
-  //Handling android back action to exit app
   useEffect(() => {
-    const backAction = () => {
-      BackHandler.exitApp();
-    };
-
-    const backHandler = BackHandler.addEventListener(
-      'hardwareBackPress',
-      backAction,
-    );
-
-    return () => backHandler.remove();
+    backHandler();
   }, []);
 
   //Pull down to refresh function on Flatlist

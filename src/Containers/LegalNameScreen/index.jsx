@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {
   Keyboard,
   KeyboardAvoidingView,
@@ -13,12 +13,13 @@ import {Formik} from 'formik';
 import * as yup from 'yup';
 
 import {storeData} from '../../Stores/store';
+
+import {backHandler} from '../../Util/Common';
 import {useTheme} from '../../Theme/index';
 import {CommonAlert, NextButton} from '../../Components';
 import {navigate} from '../../Navigators/Root';
 
 import styles from './styles';
-import {Colors} from 'react-native/Libraries/NewAppScreen';
 
 //Yup validation schema for firstName
 const formSchema = yup.object().shape({
@@ -26,13 +27,17 @@ const formSchema = yup.object().shape({
 });
 
 export default function LegalNameScreen() {
-  const {Gutters, Layout} = useTheme();
+  const {Colors, Gutters, Layout} = useTheme();
   const keyboardVerticalOffset = Platform.OS === 'ios' ? 10 : 0;
 
   const [formData, setFormData] = useState({
     firstName: null,
     lastName: null,
   });
+
+  useEffect(() => {
+    backHandler();
+  }, []);
 
   //Storing user data in Async storage on next button press
   const onNextPress = async values => {
