@@ -12,22 +12,9 @@ import {StyleSheet} from 'react-native';
 export default function ({Colors, ...args}) {
   return {
     ...StyleSheet.create({
-      backgroundPrimary: {
-        backgroundColor: Colors.primary,
-      },
-      backgroundReset: {
-        backgroundColor: Colors.transparent,
-      },
-      textInput: {
-        borderWidth: 1,
-        borderColor: Colors.subText,
-        backgroundColor: Colors.inputBackground,
-        color: Colors.subText,
-        minHeight: 50,
-        textAlign: 'center',
-        marginTop: 10,
-        marginBottom: 10,
-      },
+      backgroundPrimary: {},
+      backgroundReset: {},
+      textInput: {},
     }),
   };
 }

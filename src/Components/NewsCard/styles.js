@@ -12,6 +12,14 @@ export default StyleSheet.create({
     padding: 10,
     overflow: 'visible',
   },
+  rowContainer: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+  },
+  imageContainer: {
+    width: '25%',
+    justifyContent: 'center',
+  },
   image: {
     height: 112,
     resizeMode: 'contain',

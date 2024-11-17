@@ -15,10 +15,10 @@ import * as yup from 'yup';
 import {storeData} from '../../Stores/store';
 
 import {backHandler} from '../../Util/Common';
-import {useTheme} from '../../Theme/index';
 import {CommonAlert, NextButton} from '../../Components';
 import {navigate} from '../../Navigators/Root';
 
+import {useTheme} from '../../Theme/index';
 import styles from './styles';
 
 //Yup validation schema for firstName
@@ -109,7 +109,7 @@ export default function LegalNameScreen() {
                   </View>
                   <View
                     style={[
-                      Gutters.extraLargeVMargin,
+                      Gutters.largeTMargin,
                       styles.inputTxtContainer,
                     ]}>
                     <TextInput

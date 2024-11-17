@@ -2,7 +2,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 
 import {CommonAlert} from '../Components';
 
-//storing object value
+//Storing object value
 export const storeData = async value => {
   try {
     const jsonValue = JSON.stringify(value);
@@ -16,7 +16,7 @@ export const storeData = async value => {
   }
 };
 
-//reading object value
+//Reading object value
 export const getData = async () => {
   try {
     const jsonValue = await AsyncStorage.getItem('key');

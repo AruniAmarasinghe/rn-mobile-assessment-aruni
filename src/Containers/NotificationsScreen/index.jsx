@@ -12,8 +12,8 @@ import {backHandler} from '../../Util/Common';
 import {CommonAlert, ContinueButton} from '../../Components';
 import {navigate} from '../../Navigators/Root';
 import {NotificationIcon} from '../../Assets/SvgIcons/index';
-import {useTheme} from '../../Theme/index';
 
+import {useTheme} from '../../Theme/index';
 import styles from './styles';
 
 export default function NotificationsScreen() {

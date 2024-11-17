@@ -1,13 +1,13 @@
 import React, {useEffect} from 'react';
 import {SafeAreaView, View} from 'react-native';
 
-import {navigateAndSimpleReset, navigate} from '../../Navigators/Root';
 import {getData} from '../../Stores/store';
+import {navigateAndSimpleReset, navigate} from '../../Navigators/Root';
 
 import {AppLogo} from '../../Assets/SvgIcons/index';
 import {Colors} from '../../Theme/Variables';
-import {useTheme} from '../../Theme/index';
 
+import {useTheme} from '../../Theme/index';
 import styles from './styles';
 
 export default function SplashScreen() {

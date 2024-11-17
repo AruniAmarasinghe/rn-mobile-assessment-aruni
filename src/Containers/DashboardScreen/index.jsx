@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react';
 import {
-  BackHandler,
   FlatList,
   Linking,
   SafeAreaView,
@@ -13,8 +12,8 @@ import * as NewsService from '../../Services/NewsService';
 
 import {backHandler} from '../../Util/Common';
 import {CommonAlert, Header, Loader, NewsCard} from '../../Components';
-import {useTheme} from '../../Theme/index';
 
+import {useTheme} from '../../Theme/index';
 import styles from './styles';
 
 export default function DashboardScreen() {

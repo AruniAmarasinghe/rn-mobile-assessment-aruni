@@ -2,8 +2,8 @@ import React from 'react';
 import {Image, Text, TouchableOpacity, View} from 'react-native';
 
 import {DefaultImagePlaceholder} from '../../Assets/SvgIcons';
-import {Loader} from '../../Components';
 import {formatDate} from '../../Util/Common';
+import {Loader} from '../../Components';
 
 import {useTheme} from '../../Theme';
 import styles from './styles';
@@ -13,8 +13,8 @@ export const NewsCard = ({news, handleNewsPress, loading}) => {
 
   return (
     <View style={styles.container}>
-      <View style={{flexDirection: 'row', justifyContent: 'center'}}>
-        <View style={{width: '25%', justifyContent: 'center'}}>
+      <View style={styles.rowContainer}>
+        <View style={styles.imageContainer}>
           {loading ? (
             <View style={[Gutters.largeTMargin]}>
               <Loader size="small" />

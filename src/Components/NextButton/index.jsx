@@ -2,6 +2,7 @@ import React from 'react';
 import {TouchableOpacity} from 'react-native';
 
 import {NextIcon} from '../../Assets/SvgIcons/index';
+
 import styles from './styles';
 
 export const NextButton = ({disabled = false, ...props}) => {

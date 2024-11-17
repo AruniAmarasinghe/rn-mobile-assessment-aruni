@@ -9,7 +9,7 @@ export default StyleSheet.create({
   listContainer: {},
   newsRow: {},
   errorTxt: {
-    fontFamily: 'Rubik',
+    fontFamily: 'RubikRegular',
     fontWeight: '500',
     fontSize: 16,
     lineHeight: 24,
