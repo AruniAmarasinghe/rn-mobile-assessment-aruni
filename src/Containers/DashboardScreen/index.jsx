@@ -25,7 +25,7 @@ export default function DashboardScreen() {
   useEffect(() => {
     retrieveUserData();
     retrieveNewsData();
-  }, []);
+  }, [loading]);
 
   //Handling android back action to exit app
   useEffect(() => {
@@ -40,6 +40,12 @@ export default function DashboardScreen() {
 
     return () => backHandler.remove();
   }, []);
+
+  //Pull down to refresh function on Flatlist
+  const onRefresh = () => {
+    setLoading(true);
+    retrieveNewsData();
+  };
 
   //API call to retrieve news data
   const retrieveNewsData = async () => {
@@ -114,6 +120,8 @@ export default function DashboardScreen() {
               keyExtractor={item => item.id.toString()}
               renderItem={renderNewsItem}
               numColumns={1}
+              onRefresh={onRefresh}
+              refreshing={loading}
             />
           ) : (
             <Text style={styles.errorTxt}>
