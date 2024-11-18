@@ -26,13 +26,17 @@ export default StyleSheet.create({
   inputTxtContainer: {
     borderBottomColor: Colors.muteColor,
     borderBottomWidth: 1,
-    marginVertical: 20,
+    marginVertical: 15,
   },
   inputTxt: {
     fontSize: 20,
     fontFamily: 'RobotoLight',
     fontWeight: '400',
     color: Colors.primary,
+  },
+  errorTxt: {
+    fontSize: 15, 
+    color: Colors.errorText 
   },
   btnContainer: {
     alignItems: 'flex-end',

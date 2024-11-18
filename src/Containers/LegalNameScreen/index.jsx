@@ -24,6 +24,7 @@ import styles from './styles';
 //Yup validation schema for firstName
 const formSchema = yup.object().shape({
   firstName: yup.string().required('Required'),
+  lastName: yup.string().required('Required'),
 });
 
 export default function LegalNameScreen() {
@@ -34,10 +35,6 @@ export default function LegalNameScreen() {
     firstName: null,
     lastName: null,
   });
-
-  useEffect(() => {
-    backHandler();
-  }, []);
 
   //Storing user data in Async storage on next button press
   const onNextPress = async values => {
@@ -88,40 +85,36 @@ export default function LegalNameScreen() {
                     style={[Gutters.largeTMargin, styles.inputTxtContainer]}>
                     <TextInput
                       id="firstName"
-                      label="First name"
+                      name="firstName"
                       placeholder="First name"
                       placeholderTextColor={Colors.placeholderTxt}
                       onBlur={() => setFieldTouched('firstName')}
                       onChangeText={handleChange('firstName')}
                       value={values.firstName}
                       editable={true}
-                      errors={
-                        touched.firstName && errors.firstName
-                          ? errors.firstName
-                          : null
-                      }
                       style={styles.inputTxt}
                     />
                   </View>
+                  {touched.firstName && errors.firstName && (
+                    <Text style={styles.errorTxt}>{errors.firstName}</Text>
+                  )}
                   <View
                     style={[Gutters.largeTMargin, styles.inputTxtContainer]}>
                     <TextInput
                       id="lastName"
-                      label="Last name"
+                      name="lastName"
                       placeholder="Last name"
                       placeholderTextColor={Colors.placeholderTxt}
                       value={values.lastName}
                       onBlur={() => setFieldTouched('lastName')}
                       onChangeText={handleChange('lastName')}
                       editable={true}
-                      errors={
-                        touched.lastName && errors.lastName
-                          ? errors.lastName
-                          : null
-                      }
                       style={styles.inputTxt}
                     />
                   </View>
+                  {touched.lastName && errors.lastName && (
+                    <Text style={styles.errorTxt}>{errors.lastName}</Text>
+                  )}
                   <View style={[Gutters.regularTMargin, styles.btnContainer]}>
                     <NextButton
                       onPress={handleSubmit}

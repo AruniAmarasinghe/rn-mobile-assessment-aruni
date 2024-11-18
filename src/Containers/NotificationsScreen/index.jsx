@@ -39,10 +39,6 @@ export default function NotificationsScreen() {
   //     }
   // }
 
-  useEffect(() => {
-    backHandler();
-  }, []);
-
   //Handling user journey with continue button press based on remote notification alert
   const onContinuePress = async () => {
     if (Platform.OS === 'android') {
@@ -70,6 +66,7 @@ export default function NotificationsScreen() {
         }
       } catch (error) {}
     } else {
+      //user is navigated to Dashboard with permission alert click due to the above commented code reason
       PushNotificationIOS.requestPermissions();
       navigateToDashboard();
     }
