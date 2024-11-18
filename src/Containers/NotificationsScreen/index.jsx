@@ -43,7 +43,7 @@ export default function NotificationsScreen() {
     backHandler();
   }, []);
 
-  //Handling user journey based on remote notification alert click
+  //Handling user journey with continue button press based on remote notification alert
   const onContinuePress = async () => {
     if (Platform.OS === 'android') {
       //NOTE: Android version 12 and below will return never_ask_again without any prompt instead of granted,

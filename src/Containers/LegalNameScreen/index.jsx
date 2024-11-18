@@ -90,11 +90,7 @@ export default function LegalNameScreen() {
                       id="firstName"
                       label="First name"
                       placeholder="First name"
-                      placeholderTextColor={
-                        Platform.OS === 'android'
-                          ? Colors.primary
-                          : Colors.placeholderTxtColor
-                      }
+                      placeholderTextColor={Colors.placeholderTxtColor}
                       onBlur={() => setFieldTouched('firstName')}
                       onChangeText={handleChange('firstName')}
                       value={values.firstName}
@@ -108,24 +104,16 @@ export default function LegalNameScreen() {
                     />
                   </View>
                   <View
-                    style={[
-                      Gutters.largeTMargin,
-                      styles.inputTxtContainer,
-                    ]}>
+                    style={[Gutters.largeTMargin, styles.inputTxtContainer]}>
                     <TextInput
                       id="lastName"
                       label="Last name"
                       placeholder="Last name"
-                      placeholderTextColor={
-                        Platform.OS === 'android'
-                          ? Colors.primary
-                          : Colors.placeholderTxtColor
-                      }
-                      secured
-                      enableRightButton
+                      placeholderTextColor={Colors.placeholderTxtColor}
                       value={values.lastName}
                       onBlur={() => setFieldTouched('lastName')}
                       onChangeText={handleChange('lastName')}
+                      editable={true}
                       errors={
                         touched.lastName && errors.lastName
                           ? errors.lastName

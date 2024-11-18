@@ -1,6 +1,5 @@
 import {DefaultTheme} from '@react-navigation/native';
 
-import Common from '../../Theme/Common';
 import Gutters from '../../Theme/Gutters';
 import Layout from '../../Theme/Layout';
 import * as DefaultVariables from '../../Theme/Variables';
@@ -14,11 +13,6 @@ export default function () {
   const baseTheme = {
     Gutters: Gutters(themeVariables),
     Layout: Layout(themeVariables),
-    Common: Common({
-      ...themeVariables,
-      Layout: Layout(themeVariables),
-      Gutters: Gutters(themeVariables),
-    }),
     ...themeVariables,
   };
 

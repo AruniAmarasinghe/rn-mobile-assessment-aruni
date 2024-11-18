@@ -104,7 +104,3 @@ function getHeaders(token) {
 export const get = (url, params = null, authToken = null) => {
   return client.get(url, {params: params, headers: getHeaders(authToken)});
 };
-
-export const remove = (url, params = null, authToken = null) => {
-  return client.delete(url, {params: params, headers: getHeaders(authToken)});
-};
