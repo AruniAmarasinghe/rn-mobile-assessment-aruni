@@ -43,8 +43,12 @@ client.interceptors.response.use(
         } else if (errorData.message) {
           errorMessage = errorData.message;
         } else {
-          errorMessage =
-            'An error has occurred. Please check your internet connection and try again.';
+          if (errorStatus === 401) {
+            errorMessage = errorData.error;
+          } else {
+            errorMessage =
+              'An error has occurred. Please check your internet connection or try again in a while.';
+          }
         }
       }
       return Promise.resolve({
