@@ -45,9 +45,17 @@ client.interceptors.response.use(
         } else {
           if (errorStatus === 401) {
             errorMessage = errorData.error;
+          } else if (
+            errorStatus === 500 ||
+            errorStatus === 502 ||
+            errorStatus === 503 ||
+            errorStatus === 404
+          ) {
+            errorMessage =
+              'Something went wrong. Please try again later.';
           } else {
             errorMessage =
-              'An error has occurred. Please check your internet connection or try again in a while.';
+              'An error has occurred. Please check your internet connection or try again later.';
           }
         }
       }
