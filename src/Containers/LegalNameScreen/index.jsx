@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import {
   Keyboard,
   KeyboardAvoidingView,
@@ -14,7 +14,6 @@ import * as yup from 'yup';
 
 import {storeData} from '../../Stores/store';
 
-import {backHandler} from '../../Util/Common';
 import {CommonAlert, NextButton} from '../../Components';
 import {navigate} from '../../Navigators/Root';
 

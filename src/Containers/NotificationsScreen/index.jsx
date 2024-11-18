@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import {
   PermissionsAndroid,
   Platform,
@@ -8,7 +8,6 @@ import {
 } from 'react-native';
 import PushNotificationIOS from '@react-native-community/push-notification-ios';
 
-import {backHandler} from '../../Util/Common';
 import {CommonAlert, ContinueButton} from '../../Components';
 import {navigate} from '../../Navigators/Root';
 import {NotificationIcon} from '../../Assets/SvgIcons/index';

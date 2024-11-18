@@ -1,5 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {
+  Alert,
+  BackHandler,
   FlatList,
   Linking,
   SafeAreaView,
@@ -10,7 +12,6 @@ import {
 import {getData} from '../../Stores/store';
 import * as NewsService from '../../Services/NewsService';
 
-import {backHandler} from '../../Util/Common';
 import {CommonAlert, Header, Loader, NewsCard} from '../../Components';
 
 import {useTheme} from '../../Theme/index';
@@ -28,7 +29,24 @@ export default function DashboardScreen() {
   }, [loading]);
 
   useEffect(() => {
-    backHandler();
+    const backAction = () => {
+      CommonAlert({
+        title: 'Hold on!',
+        message: 'Are you sure you want to go back?',
+        buttons: [
+          {text: 'Cancel', onPress: () => null, style: 'cancel'},
+          {text: 'Yes', onPress: () => BackHandler.exitApp()},
+        ],
+      });
+      return true;
+    };
+
+    const backHandler = BackHandler.addEventListener(
+      'hardwareBackPress',
+      backAction,
+    );
+
+    return () => backHandler.remove();
   }, []);
 
   //Pull down to refresh function on Flatlist

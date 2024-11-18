@@ -5,9 +5,3 @@ import dayjs from 'dayjs';
 export const formatDate = date => {
   return dayjs.unix(date).format('D MMMM YYYY');
 };
-
-// Disabling Android back button
-export const backHandler = () => {
-  BackHandler.addEventListener('hardwareBackPress', () => true);
-  return () => backHandler.remove();
-};
