@@ -7,11 +7,3 @@ export const CommonAlert = ({
 }) => {
   Alert.alert(title, message, buttons);
 };
-
-export const ConnectionLostAlert = () => {
-  Alert.alert(
-    'Connection Error',
-    'Please check your internet connection and try again',
-    [{text: 'Okay'}],
-  );
-};
