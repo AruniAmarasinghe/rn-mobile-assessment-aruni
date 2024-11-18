@@ -20,7 +20,7 @@ import {navigate} from '../../Navigators/Root';
 import {useTheme} from '../../Theme/index';
 import styles from './styles';
 
-//Yup validation schema for firstName
+//Yup validation schema for stored name data
 const formSchema = yup.object().shape({
   firstName: yup.string().required('Required'),
   lastName: yup.string().required('Required'),

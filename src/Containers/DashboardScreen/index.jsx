@@ -27,6 +27,7 @@ export default function DashboardScreen() {
     retrieveNewsData();
   }, [loading]);
 
+  //Handling back action in Android
   useEffect(() => {
     const backAction = () => {
       CommonAlert({
