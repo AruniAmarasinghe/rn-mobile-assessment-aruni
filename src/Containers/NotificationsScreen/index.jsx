@@ -86,7 +86,7 @@ export default function NotificationsScreen() {
         <View>
           <NotificationIcon />
         </View>
-        <View style={styles.txtContainer}>
+        <View style={[Layout.alignItemsCenter, styles.txtContainer]}>
           <Text style={styles.titelTxt}>Get the most out of Blott ✅</Text>
           <Text style={styles.subTxt}>
             Allow notifications to stay in the loop with your payments, requests

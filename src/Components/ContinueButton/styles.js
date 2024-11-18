@@ -8,7 +8,7 @@ export default StyleSheet.create({
     borderRadius: 24,
     padding: 12,
     gap: 4,
-    backgroundColor: Colors.buttonColor,
+    backgroundColor: Colors.button,
   },
   btnText: {
     fontFamily: 'RobotoMedium',

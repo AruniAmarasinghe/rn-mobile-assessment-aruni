@@ -8,8 +8,6 @@ export default StyleSheet.create({
   },
   txtContainer: {
     marginVertical: 50,
-    flexDirection: 'column',
-    alignItems: 'center',
   },
   titelTxt: {
     color: Colors.primary,

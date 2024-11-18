@@ -9,12 +9,13 @@ import {useTheme} from '../../Theme';
 import styles from './styles';
 
 export const NewsCard = ({news, handleNewsPress, loading}) => {
-  const {Gutters} = useTheme();
+  const {Gutters, Layout} = useTheme();
 
   return (
-    <View style={styles.container}>
-      <View style={styles.rowContainer}>
-        <View style={styles.imageContainer}>
+    <View style={[Layout.column, styles.container]}>
+      <View
+        style={[Layout.row, Layout.justifyContentCenter, styles.rowContainer]}>
+        <View style={[Layout.justifyContentCenter, styles.imageContainer]}>
           {loading ? (
             <View style={[Gutters.largeTMargin]}>
               <Loader size="small" />
@@ -33,13 +34,25 @@ export const NewsCard = ({news, handleNewsPress, loading}) => {
           <TouchableOpacity
             style={styles.btnContainer}
             onPress={() => handleNewsPress(news.id)}>
-            <View style={styles.txtContainer}>
+            <View
+              style={[
+                Layout.row,
+                Layout.justifyContentBetween,
+                Layout.alignItemsCenter,
+                styles.txtContainer,
+              ]}>
               <Text style={[styles.sourceTxt]}>{news?.source}</Text>
               <Text style={[styles.sourceTxt]}>
                 {formatDate(news?.datetime)}
               </Text>
             </View>
-            <View style={styles.txtContainer}>
+            <View
+              style={[
+                Layout.row,
+                Layout.justifyContentBetween,
+                Layout.alignItemsCenter,
+                styles.txtContainer,
+              ]}>
               <Text
                 ellipsizeMode="tail"
                 numberOfLines={3}

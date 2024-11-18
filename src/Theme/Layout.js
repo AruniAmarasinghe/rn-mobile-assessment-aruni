@@ -95,15 +95,5 @@ export default function () {
     fullHeight: {
       height: '100%',
     },
-    /* Operation Layout */
-    mirror: {
-      transform: [{scaleX: -1}],
-    },
-    rotate90: {
-      transform: [{rotate: '90deg'}],
-    },
-    rotate90Inverse: {
-      transform: [{rotate: '-90deg'}],
-    },
   });
 }

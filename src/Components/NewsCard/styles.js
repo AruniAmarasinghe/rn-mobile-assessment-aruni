@@ -6,19 +6,14 @@ const {width} = Dimensions.get('window');
 
 export default StyleSheet.create({
   container: {
-    flexDirection: 'column',
     height: 152,
     width: width,
     padding: 10,
     overflow: 'visible',
   },
-  rowContainer: {
-    flexDirection: 'row',
-    justifyContent: 'center',
-  },
+  rowContainer: {},
   imageContainer: {
     width: '25%',
-    justifyContent: 'center',
   },
   image: {
     height: 112,
@@ -28,9 +23,6 @@ export default StyleSheet.create({
     padding: 20,
   },
   txtContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
     paddingRight: 10,
   },
   sourceTxt: {

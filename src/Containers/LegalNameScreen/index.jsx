@@ -90,7 +90,7 @@ export default function LegalNameScreen() {
                       id="firstName"
                       label="First name"
                       placeholder="First name"
-                      placeholderTextColor={Colors.placeholderTxtColor}
+                      placeholderTextColor={Colors.placeholderTxt}
                       onBlur={() => setFieldTouched('firstName')}
                       onChangeText={handleChange('firstName')}
                       value={values.firstName}
@@ -109,7 +109,7 @@ export default function LegalNameScreen() {
                       id="lastName"
                       label="Last name"
                       placeholder="Last name"
-                      placeholderTextColor={Colors.placeholderTxtColor}
+                      placeholderTextColor={Colors.placeholderTxt}
                       value={values.lastName}
                       onBlur={() => setFieldTouched('lastName')}
                       onChangeText={handleChange('lastName')}

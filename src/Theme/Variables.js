@@ -11,12 +11,12 @@
 export const Colors = {
   transparent: 'rgba(0,0,0,0)',
   primary: '#000000',
-  buttonColor: '#523AE4',
+  button: '#523AE4',
   white: '#FAFAFA',
   subText: '#737373',
   titleText: '#171717',
   muteColor: '#D4D4D4',
-  placeholderTxtColor: '#A3A3A3',
+  placeholderTxt: '#A3A3A3',
 };
 
 /**
