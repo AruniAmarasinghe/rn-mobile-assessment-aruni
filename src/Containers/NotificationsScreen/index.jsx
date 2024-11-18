@@ -82,7 +82,7 @@ export default function NotificationsScreen() {
 
   return (
     <SafeAreaView style={[Layout.fill, Layout.center]}>
-      <View style={[styles.container, Layout.center, Layout.fill]}>
+      <View style={[Layout.center, Layout.fill, styles.container]}>
         <View>
           <NotificationIcon />
         </View>

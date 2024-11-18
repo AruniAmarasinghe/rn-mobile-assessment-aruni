@@ -5,7 +5,6 @@ import {Colors} from '../../Theme/Variables';
 export default StyleSheet.create({
   container: {
     padding: 20,
-    flex: 1,
   },
   titleTxt: {
     fontSize: 30,

@@ -63,8 +63,8 @@ export default function LegalNameScreen() {
         <KeyboardAvoidingView
           behavior="padding"
           keyboardVerticalOffset={keyboardVerticalOffset}
-          style={[Layout.alignItemsStart, styles.container]}>
-          <View style={{flex: 1}}>
+          style={[Layout.alignItemsStart, Layout.fill, styles.container]}>
+          <View style={[Layout.fill]}>
             <Text style={styles.titleTxt}>Your legal name</Text>
             <Text style={styles.subTxt}>
               We need to know a bit about you so that we can create your
