@@ -17,6 +17,7 @@ export const Colors = {
   titleText: '#171717',
   muteColor: '#D4D4D4',
   placeholderTxt: '#A3A3A3',
+  errorText: '#FF0000'
 };
 
 /**
